@@ -3,7 +3,7 @@ const mongoose = require("mongoose");
 const User =require('./user');
 const app = express();
 const mongdb = require("mongodb");
-const DB = "mongodb+srv://sangram31200431:Sangram31@cluster1.mmrrxhf.mongodb.net/?retryWrites=true&w=majority";
+
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
