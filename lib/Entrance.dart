@@ -19,14 +19,15 @@ List<String> data = [];
 var contorll;
 String isnull ="";
 bool isEven =true;
-
+String removeddata="";
 bool isloading = false;
 
 
 final TextEditingController controller=TextEditingController();
 
-    void count()async{
-    
+ void delete()async{
+     http.Response response = await http.post(Uri.parse("$uri/delete"),headers: {"Content_Type":"application/json"},body: {'task':removedata},);
+     print(response body);
     }
    
  
@@ -140,7 +141,8 @@ final TextEditingController controller=TextEditingController();
             print(direction);
               // Remove the item from the data source
               if(direction ==DismissDirection.startToEnd){
-         
+                removedata =data[index];
+                 delete();
                  setState(() {
                 data.removeAt(index);
                 // print(index);
