@@ -1,8 +1,8 @@
-# todolistani
+# TODOLIST
 
-A new Flutter project.
+A  Flutter project.
 
-## Getting Started
+## MEFN stack  
 
 This project is a starting point for a Flutter application.
 
