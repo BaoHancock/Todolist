@@ -27,7 +27,7 @@ final TextEditingController controller=TextEditingController();
 
  void delete()async{
      http.Response response = await http.post(Uri.parse("$uri/delete"),headers: {"Content_Type":"application/json"},body: {'task':removedata},);
-     print(response body);
+     print(response.body);
     }
    
  
